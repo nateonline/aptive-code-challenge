@@ -2,11 +2,21 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "npm",
-			"script": "start",
+			"type": "shell",
+			"command": "node ${fileBasename}",
 			"problemMatcher": [],
-			"label": "npm: start",
-			"detail": "node index.js"
+			"label": "Run file",
+			"icon": {
+				"color": "terminal.ansiYellow",
+				"id": "debug-start"
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"clear": true
+			}
 		}
 	]
 }
