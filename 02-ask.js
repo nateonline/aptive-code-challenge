@@ -5,9 +5,6 @@ fetch('https://challenge.aptive.tech/api/challenge/cac886c2-e3b7-4028-b8eb-605aa
 	headers: {
 		'Content-Type': 'application/json',
 	},
-	body: JSON.stringify({
-		email: 'nate96taylor@gmail.com',
-	}),
 })
 	.then(response => response.json())
 	.then(data => fs.writeFile('response.json', JSON.stringify(data, null, 4)));
