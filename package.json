@@ -9,6 +9,7 @@
   "author": "nateonline",
   "license": "ISC",
   "dependencies": {
-    "crc-32": "^1.2.2"
+    "crc-32": "^1.2.2",
+    "crypto-js": "^4.2.0"
   }
 }
