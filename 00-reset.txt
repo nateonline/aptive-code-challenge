@@ -1,0 +1,6 @@
+How to reset
+
+POST /api/challenge
+Content-Type: application/json
+
+{"email": "nate96taylor@gmail.com", "reset": true}
