@@ -31,6 +31,7 @@ let failures = 0;
 let lastTimestamp = 0;
 let state = 'CLOSED';
 
+// Was stepping though the cases manually to make sure I understood, realized I actually didn't need to calculate the ending state because the breaker never opened!
 // No Code Needed 😜
 
 fetch('https://challenge.aptive.tech/api/challenge/cac886c2-e3b7-4028-b8eb-605aa8f3a499/6', {

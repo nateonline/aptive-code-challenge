@@ -8,6 +8,8 @@ for (let i = 2; i < 19; i++) {
 }
 console.log(sequence.at(-1));
 
+// Dealt with some off-by-one requirements definitions stuff
+
 fetch('https://challenge.aptive.tech/api/challenge/cac886c2-e3b7-4028-b8eb-605aa8f3a499/3', {
 	method: 'POST',
 	headers: {

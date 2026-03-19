@@ -1,5 +1,7 @@
 import fs from 'fs/promises';
 
+// Went back and forth on some logic, hitting a couple of attempts along the way. Ended up using some LLM help here too, because I guess I had some of the logic backwards.
+
 fetch('https://challenge.aptive.tech/api/challenge/cac886c2-e3b7-4028-b8eb-605aa8f3a499/9', {
 	method: 'POST',
 	headers: {

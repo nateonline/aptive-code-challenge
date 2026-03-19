@@ -1,5 +1,7 @@
 import fs from 'fs/promises';
 
+// This one just had me apply some logic and barely change the example submission, was super easy
+
 fetch('https://challenge.aptive.tech/api/challenge/cac886c2-e3b7-4028-b8eb-605aa8f3a499/7', {
 	method: 'POST',
 	headers: {

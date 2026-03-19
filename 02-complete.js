@@ -6,6 +6,7 @@ const signedAnswer = CRC32.str(data);
 const hexAnswer = (signedAnswer >>> 0).toString(16);
 console.log(hexAnswer);
 
+// Thought I did everything correct, but the api wasn't letting me pass. Checked with an online hash calculator and got my same (incorrect) result. Finally gave the problem to an LLM (gemini) and it gave me this completely different number, which ended up being correct
 // Not sure why this is the correct answer, and not 9b049fd8, need to investigate
 const CORRECT_ANSWER = "576bc68d";
 

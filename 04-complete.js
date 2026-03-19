@@ -20,7 +20,7 @@ let sum = 0;
 // 		})
 // }
 
-// Answer is 49254 % 10000
+// Sum of all pages is 49254
 
 fetch('https://challenge.aptive.tech/api/challenge/cac886c2-e3b7-4028-b8eb-605aa8f3a499/4', {
 	method: 'POST',

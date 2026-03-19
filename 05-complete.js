@@ -1,6 +1,8 @@
 import fs from 'fs/promises';
 import CryptoJS from 'crypto-js';
 
+// First (almost) fully automated response. (I could've found a way to dynamically create the keys on the distribution object, but decided not to yet)
+
 const servers = [
 	"server-a",
 	"server-b",
