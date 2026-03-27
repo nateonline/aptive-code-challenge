@@ -1,13 +1,11 @@
 <?php
 
-$url = "https://challenge.aptive.tech/api/challenge";
-$payload = json_encode(["email" => "nate96taylor+php@gmail.com"]);
+$url = "https://challenge.aptive.tech/api/challenge/b641f5b2-5016-4bb3-b47f-cba4e2f3cedf/2";
 
 $options = [
 	"http" => [
-		"method"  => "POST",
-		"header"  => "Content-type: application/json\r\n" . "Content-Length: " . strlen($payload) . "\r\n",
-		"content" => $payload,
+		"method"  => "GET",
+		"header"  => "Content-type: application/json\r\n"
 	],
 ];
 
