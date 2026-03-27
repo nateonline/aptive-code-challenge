@@ -1,7 +1,7 @@
 <?php
 
-$url = 'https://challenge.aptive.tech/api/challenge';
-$payload = json_encode(['email' => 'nate96taylor+php@gmail.com']);
+$url = 'https://challenge.aptive.tech/api/challenge/b641f5b2-5016-4bb3-b47f-cba4e2f3cedf/1';
+$payload = json_encode(['acknowledged' => true]);
 
 $options = [
 	'http' => [
