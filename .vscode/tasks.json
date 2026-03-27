@@ -5,7 +5,10 @@
 			"type": "shell",
 			"command": "node ${fileBasename}",
 			"problemMatcher": [],
-			"label": "Run file",
+			"label": "Run JavaScript File",
+			"options": {
+				"cwd": "javascript"
+			},
 			"icon": {
 				"color": "terminal.ansiYellow",
 				"id": "debug-start"
