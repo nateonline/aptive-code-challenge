@@ -10,8 +10,8 @@
 				"cwd": "javascript"
 			},
 			"icon": {
+				"id": "debug-start",
 				"color": "terminal.ansiYellow",
-				"id": "debug-start"
 			},
 			"presentation": {
 				"echo": true,
@@ -20,6 +20,26 @@
 				"panel": "shared",
 				"clear": true
 			}
-		}
+		},
+		{
+			"type": "shell",
+			"command": "php ${fileBasename}",
+			"problemMatcher": [],
+			"label": "Run PHP File",
+			"options": {
+				"cwd": "php"
+			},
+			"icon": {
+				"id": "debug-start",
+				"color": "terminal.ansiMagenta",
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"clear": true
+			}
+		},
 	]
 }
