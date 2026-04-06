@@ -33,23 +33,23 @@ $post_content = json_encode([
 
 echo json_encode($post_content) . PHP_EOL;
 
-$options = [
-	"http" => [
-		"method"  => "POST",
-		"header"  => "Content-type: application/json\r\n" . "Content-Length: " . strlen($post_content) . "\r\n",
-		"content" => $post_content,
-	],
-];
+// $options = [
+// 	"http" => [
+// 		"method"  => "POST",
+// 		"header"  => "Content-type: application/json\r\n" . "Content-Length: " . strlen($post_content) . "\r\n",
+// 		"content" => $post_content,
+// 	],
+// ];
 
-$context  = stream_context_create($options);
-$response = file_get_contents($url, false, $context);
+// $context  = stream_context_create($options);
+// $response = file_get_contents($url, false, $context);
 
-if ($response === false) {
-	die("Error: Could not reach the API.");
-}
+// if ($response === false) {
+// 	die("Error: Could not reach the API.");
+// }
 
-$data = json_decode($response, true);
-$prettyJson = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
-file_put_contents("response.json", $prettyJson);
+// $data = json_decode($response, true);
+// $prettyJson = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+// file_put_contents("response.json", $prettyJson);
 
-echo "Response saved to response.json successfully!" . PHP_EOL;
+// echo "Response saved to response.json successfully!" . PHP_EOL;
