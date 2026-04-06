@@ -5,9 +5,29 @@
 			"type": "shell",
 			"command": "node ${fileBasename}",
 			"problemMatcher": [],
-			"label": "Run JavaScript File",
+			"label": "Run JavaScript File (Code Challenge)",
 			"options": {
-				"cwd": "javascript"
+				"cwd": "code-challenge/javascript"
+			},
+			"icon": {
+				"id": "debug-start",
+				"color": "terminal.ansiYellow",
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "shared",
+				"clear": true
+			}
+		},
+		{
+			"type": "shell",
+			"command": "node ${fileBasename}",
+			"problemMatcher": [],
+			"label": "Run JavaScript File (Infinity Problem)",
+			"options": {
+				"cwd": "infinity-problem"
 			},
 			"icon": {
 				"id": "debug-start",
